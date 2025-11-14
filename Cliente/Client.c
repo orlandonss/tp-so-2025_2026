@@ -2,8 +2,6 @@
 #include <stdio.h>
 
 
-
-
 int main(int argc, char *argv[]) {
     
     if(argc != 2) {
@@ -13,8 +11,6 @@ int main(int argc, char *argv[]) {
     
     GestordeThreads gestor;
     memset(&gestor, 0, sizeof(GestordeThreads));
-    inicializa_tudo(&gestor);
-
 
     return 0;
 }

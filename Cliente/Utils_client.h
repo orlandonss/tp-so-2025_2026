@@ -1,6 +1,7 @@
 
 #include <pthread.h>
 #include <stdbool.h>
+#include <string.h>
 
 
 #ifndef UTILS_H
@@ -12,7 +13,7 @@
 #define USERNAME_LEN 32 //tamanho maximo do username
 #define LOCAL_LEN 128 //tamanho maximo do local
 #define DESTINO_LEN 128 //tamanho maximo do destino
-#define ARGUMENTOS_INVALIDOS -1
+#define ARGUMENTOS_INVALIDOS 1
 
 
 typedef enum{
@@ -22,13 +23,12 @@ typedef enum{
     ENTRAR, //3
     AGENDAR,//4
     CONSULTAR,//5
-    CONSULTAR //6
 }TipodeMSG;
 
 //ESTRUTURA QUE DEFINE OS TIPOS DE MENSAGEM
 typedef enum{
     ORIGEM_CONTROLADOR, //0
-    ORIGEM_VEICULO //1
+    ORIGEM_VEICULO,//1
 }OrigemMsg;
    
 //pesquisar sobre o union dentro da steruct, para que serve 
